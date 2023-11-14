@@ -1,7 +1,10 @@
+// selector html
 const container = document.getElementById('container')
 const loader = document.getElementById('loader')
 const errorContainer = document.getElementById('error')
 
+
+// fungsi untuk membuat kerangka html
 function printUser(item) {
     return `
     <div class='item'>
@@ -11,7 +14,7 @@ function printUser(item) {
     `
 }
 
-
+// fungsi untuk mengambil data
 async function fetchData() {
     // promise then
     // fetch('https://jsonplaceholder.typicode.com/users')
@@ -40,4 +43,5 @@ async function fetchData() {
     }
 }
 
+//fungsi untuk mengambil datanya (dipanggil disini)
 fetchData()
